@@ -10,5 +10,11 @@ jobs:
   dire-bonjour:
     runs-on: ubuntu-latest
     steps:
-      - name: Dire bonjour
+      - name: Afficher un message
         run: echo "Bonjour GitHub Actions 👋"
+
+      - name: Afficher la date
+        run: date
+
+      - name: Lister les fichiers
+        run: ls -la
