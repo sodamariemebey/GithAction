@@ -1,4 +1,4 @@
-name: Hello World
+name: 💖 Hello Project 🌸
 
 on:
   push:
@@ -7,14 +7,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  dire-bonjour:
+  soso-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Afficher un message
-        run: echo "Bonjour GitHub Actions 👋"
+      - name: 🌸 Récupérer le projet
+        uses: actions/checkout@v4
 
-      - name: Afficher la date
-        run: date
+      - name: 💕 Lire un message 
+        run: cat message.txt
 
-      - name: Lister les fichiers
-        run: ls -la
+      - name: 🎀 Exécuter le script 
+        run: |
+          chmod +x soso.sh
+          ./soso.sh
