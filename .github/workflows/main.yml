@@ -10,13 +10,13 @@ jobs:
   soso-job:
     runs-on: ubuntu-latest
     steps:
-      - name: 🌸 Récupérer le projet
+      - name:  Récupérer le projet
         uses: actions/checkout@v4
 
-      - name: 💕 Lire un message 
+      - name:  Lire un message 
         run: cat message.txt
 
-      - name: 🎀 Exécuter le script 
+      - name:  Exécuter le script 
         run: |
           chmod +x soso.sh
           ./soso.sh
